@@ -1,0 +1,743 @@
+/* ---- Estilo general del body ---- */
+
+body {
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(245, 233, 218, 1);
+}
+
+/* ---- Menú de navegación ---- */
+nav {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: #3d3028;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 20px;
+  margin-bottom: 0;
+ 
+
+
+}
+
+/* Ítems de la lista del menú */
+nav ul li {
+  display: flex;
+  list-style-type: none;
+  display: inline-block;
+  transition: 0.8s all;
+  padding: 20px 30px;
+   align-items: left;
+  justify-content: flex-start;
+  position: 0;
+  margin: 0;
+
+}
+
+/* Efecto hover en los ítems */
+nav ul li:hover {
+  background-color: #d3d1bf;
+  border-radius: 8px;
+
+}
+
+/* Enlaces del menú */
+nav ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+a:visited {
+  color: rgb(255, 255, 255);
+}
+
+a:active {
+  color: rgb(255, 255, 255);
+}
+
+/* Logo en el menú */
+.img-logo {
+  width: 100px;
+  padding-top: 0px;
+  padding-left: 5%;
+
+
+}
+
+/* Lista del menú alineada a la derecha */
+nav ul {
+  padding: 0px;
+  margin: 0;
+  float: right;
+  display: flex;
+  height: 100%;
+  align-items: left;
+  justify-content: left;
+  position: 0;
+  display: flex;
+  align-items: flex-start;
+
+}
+
+
+/* ---- Sección destacada (video y receta) ---- */
+.featured {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 60px;
+  padding: 60px;
+  /* espacio entre video y texto */
+
+  background-color: #3d3028;
+}
+
+/* Contenedor del video */
+.fp-video {
+  flex: 0 0 700px;
+  position: relative;
+  height: 0;
+  min-width: 700px;
+  margin-top: 20px;
+
+}
+
+.fp-video iframe {
+  width: 100%;
+  height: 370px;
+}
+
+/* Artículo de la receta */
+.ft-articulo {
+  flex: 1;
+  background-color: rgba(245, 233, 218, 1);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-family: Merriweather, serif;
+  font-size: 18px;
+  color: #4E342E;
+}
+
+article h1 {
+  border-bottom: solid thin black;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 28px;
+}
+
+.ft-articulo {
+  flex: 0 0 400px;
+  font-family: Merriweather, serif;
+  font-size: 20px;
+  color: #4E342E;
+
+}
+
+/* Botón "Ver más" */
+.boton-container {
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.boton-container a {
+  text-decoration: none;
+  color: black;
+
+}
+
+.boton {
+  padding: 15px;
+  color: black;
+  border-radius: 3%;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+
+}
+
+.boton:hover {
+  background-color: rgba(207, 175, 110, 1)
+}
+
+.boton-container {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.boton-container a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.boton {
+  padding: 12px 30px;
+  font-size: 20px;
+  border-radius: 8px;
+  background-color: #3d3028;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+  background-color: rgba(207, 175, 110, 1);
+  color: black;
+}
+
+/* ---- Imágenes de los platos ---- */
+.art-image img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+
+
+}
+
+section img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+
+}
+
+/* Texto de artículos */
+.art-cont {
+  width: 740px;
+  vertical-align: top;
+  font-family: Merriweather, serif;
+  font-size: 20px;
+  color: rgba(245, 233, 218, 1);
+  text-align: center;
+}
+
+/* Títulos generales */
+h2 {
+  margin: 0;
+  border-bottom: solid thin rgb(170, 160, 160);
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 30px;
+
+
+
+}
+
+/* ---- Sección bienvenida ---- */
+
+.experiencia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 40px 60px;
+  box-sizing: border-box;
+}
+
+.exp-texto {
+  flex: 1;
+  font-family: 'Playfair Display', serif;
+  color: #ffffff;
+}
+
+.exp-texto h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.exp-texto p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+.exp-imagen {
+  flex: 1;
+}
+
+.exp-imagen img {
+  width: 500px;
+  height: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.experiencia {
+  width: 100%;
+  height: auto;
+  background-color: #3d3028;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ---- Sección chefs ---- */
+.chefs {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: rgba(253, 245, 239, 1);
+  border-radius: 8px;
+  margin: 40px 0;
+}
+
+.chefs h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-style: italic;
+  color: rgba(78, 52, 46, 1);
+  margin-bottom: 30px;
+}
+
+.chefs-contenido img {
+  width: 350px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.chefs-contenido p {
+  font-family: Merriweather, serif;
+  font-size: 18px;
+  color: #3a2e2a;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ---- Carrusel ---- */
+.carrusel-fade {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  margin-top: 0;
+}
+
+.fade-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: fade 16s infinite;
+
+}
+
+/* Animación */
+.fade-img:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.fade-img:nth-child(2) {
+  animation-delay: 4s;
+}
+
+.fade-img:nth-child(3) {
+  animation-delay: 8s;
+}
+
+.fade-img:nth-child(4) {
+  animation-delay: 12s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  6.25% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  31.25% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+footer {
+  background-color: #3d3028;
+  color: rgba(245, 233, 218, 1);
+  clear: both;
+  line-height: 20px;
+  text-align: center;
+  padding: 5px;
+
+}
+
+
+.footer-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: center;
+  gap: 20px;
+}
+
+/* Columnas */
+.footer-col {
+  flex: 1;
+  padding: 10px;
+}
+
+.footer-col h3 {
+  margin-bottom: 10px;
+  color: #ffffff;
+  /* dorado */
+}
+
+.footer-centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Parte inferior (redes) */
+.footer-bottom {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.redes-sociales a {
+  color: #ccc;
+  margin: 0 15px;
+  font-size: 22px;
+  transition: color 0.3s ease;
+}
+
+.redes-sociales a:hover {
+  color: #cfaf6e;
+}
+
+/* ---- Formulario de contacto ---- */
+.contacto {
+  background-color: #f9f4ef;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 40px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.contacto-formulario h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: #3d3028;
+}
+
+.fila {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.campo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.campo label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #3d3028;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  border-color: #cfaf6e;
+  outline: none;
+}
+
+/* ---- Formulario de contacto ---- */
+.boton-enviar {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 6px;
+  background-color: #3d3028;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.boton-enviar:hover {
+  background-color: #cfaf6e;
+  color: #3d3028;
+}
+
+/* ---- Ajustes de alineación ---- */
+h2 {
+  text-align: center;
+}
+
+.art-image {
+  text-align: center;
+}
+
+
+.art-cont {
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+.featured h1,
+.featured h2 {
+  text-align: center;
+}
+
+.nosotros {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: rgba(253, 245, 239, 1);
+  border-radius: 8px;
+  margin: 40px 0;
+  color: #4E342E;
+   max-width: 800px;   
+  margin: 0 auto;     
+  line-height: 1.6;   
+  padding: 0 20px;    
+
+}
+
+.historia {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: rgba(253, 245, 239, 1);
+  border-radius: 8px;
+  margin: 40px 0;
+  color: #4E342E;
+   max-width: 800px;   
+  margin: 0 auto;    
+  line-height: 1.6;   
+  padding: 0 20px;    
+  cursor: pointer;
+
+}
+
+
+
+/* layout receta / ingredientes + pasos: imagen izquierda, texto derecha */
+.receta,
+.receta2 {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 50px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+/* imagen de la izquierda (control de tamaño y estilo) */
+.receta-img img,
+.receta2-img img {
+  width: 500px;
+  /* ancho fijo en pantallas grandes */
+
+  height: 500px;
+  /* alto fijo en pantallas grandes */
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  display: block;
+}
+
+/* columna de texto a la derecha (se expande) */
+.receta-texto,
+.receta2-texto {
+  flex: 1;
+  color: #000000;
+  /* ajusta según tu paleta */
+  font-family: Merriweather, serif;
+}
+
+/* título dentro de la columna de texto */
+.receta-texto h2,
+.receta2-texto h2 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 28px;
+  margin: 0 0 12px 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+/* lista de ingredientes (izquierda compacta, buen interlineado) */
+.receta-texto ul,
+.receta2-texto ol {
+  margin: 14px 0 0 0;
+  padding-left: 1.15rem;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Ajustes para la lista numerada (pasos) */
+.receta2-texto ol {
+  padding-left: 1.4rem;
+}
+
+
+
+.receta-img img,
+.receta2-img img {
+  width: 100%;
+  max-width: 650px;
+}
+
+.receta-texto,
+.receta2-texto {
+  width: 100%;
+  text-align: left;
+}
+
+.receta-texto h2,
+.receta2-texto h2 {
+  text-align: center;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 40px 20px;
+  max-width: 1100px;
+  /* ajusta según el ancho de tu página */
+  margin: auto;
+  box-shadow: 0 6px 18px rgba(59, 55, 55, 0.25);
+  background-color: #fff;
+}
+
+.plato-card {
+  background: rgba(245, 233, 218, 1);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.plato-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.plato-card img {
+  width: 100%;
+  /* que se ajuste al contenedor */
+  height: 450px;
+  /* altura uniforme */
+  object-fit: cover;
+  display: block;
+  cursor: pointer;
+}
+
+.plato-info {
+  padding: 15px 20px;
+  text-align: left;
+}
+
+.plato-info h3 {
+  font-size: 1.3rem;
+  color: #3d3028;
+}
+
+.plato-info p {
+  font-size: 0.95rem;
+  margin: 8px 0;
+  color: #555;
+}
+
+.precio {
+  font-weight: bold;
+  color: #3d3028;
+  font-size: 1.1rem;
+}
+
+
+
+nav {
+  display: flex;
+  align-items: center;
+  /* centra logo, buscador y menú verticalmente */
+  justify-content: space-between;
+  padding: 10px 5px;
+  background: #3d3028;
+  color: #fff;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.busqueda {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 20px;
+  padding: 2px 8px;
+  margin: 0 auto;
+  /*  aire a los lados *
+  max-width: 180px; /* evita que se estire demasiado */
+}
+
+.busqueda input {
+  border: none;
+  outline: none;
+  padding: 5px 8px;
+  font-size: 14px;
+  width: 120px;
+  /* ajusta el ancho */
+}
+
+.busqueda button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #3d3028;
+  font-size: 16px;
+  padding: 4px;
+}
